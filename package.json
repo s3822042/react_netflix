@@ -16,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage --watchAll",
+    "deploy": "npm run build && firebase deploy --only hosting",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
