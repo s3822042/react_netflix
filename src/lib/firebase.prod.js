@@ -2,8 +2,7 @@ import Firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-// 1) when seeding the database you'll have to uncomment this!
-// import { seedDatabase } from '../seed';
+import { seedDatabase } from '../seed';
 
 const config = {
   apiKey: 'AIzaSyAP2ZFsPGBMhfTByv5ooqPuYEDVmc-VUTM',
@@ -12,12 +11,11 @@ const config = {
   projectId: 'react-netflix-b217d',
   storageBucket: 'react-netflix-b217d.appspot.com',
   messagingSenderId: '117223045543',
-  appId: '1:117223045543:web:10bac575e795c89ec9de82',
+  appId: '1:117223045543:web:35cb2380e02f0688c9de82',
+  measurementId: 'G-2N2KGQ57C3',
 };
 
 const firebase = Firebase.initializeApp(config);
-// 2) when seeding the database you'll have to uncomment this!
-// seedDatabase(firebase);
-// 3) once you have populated the database (only run once!), re-comment this so you don't get duplicate data
+seedDatabase(firebase);
 
 export { firebase };
